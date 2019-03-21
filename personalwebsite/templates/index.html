@@ -1,14 +1,41 @@
 {% extends "base.html" %}
 {% block content %}
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Welcome to my website</h1>
-      <p class="lead">I am currently pursuing my Front End Libraries Certification from freeCodeCamp.</p>
-      <p class='lead'>Please use the tabs in the navigation bar above to view my resume and LinkedIn and GitHub profiles.</p>
-      <div class="container">
-        <img src="../static/IMG_0724.jpg" alt="" width=auto height="300">
-      </div>
+<section class='home' id='welcome-section'>
+    <h1>Welcome to the website of Josh Holtkort</h1>
+    <p>a web developer</p>
+    <img src="static/profile_pic.jpg" alt="Profile picture">
+</section>
+
+<section id='about'>
+  <h2>About:</h2>
+  <p>I am a junior web developer based in Austin, TX.  I am looking for an entry level position in front end development.</p>
+</section>
+
+<section id='projects'>
+  <h2>Here is a list of some of my projects:</h2>
+  <div class="project-container">
+    <div class="project-tile">
+      <h3>Tribute Page</h3>
+      <a href="https://github.com/jholtkort/tribute_page" target="_blank">
+        <img src="static/tribute_page.png" alt="">
+      </a>
+    </div>
+    <div class="project-tile">
+      <h3>Survey Form</h3>
+      <a href="https://github.com/jholtkort/survey_form" target="_blank">
+        <img src="static/survey_form.png" alt="">
+      </a>
     </div>
   </div>
+</section>
+
+<section id='contact'>
+  <h2>Contact:</h2>
+  <div id='contact-container'>
+    <a id='profile-link' href="https://github.com/jholtkort" target="_blank"><img src="static/GitHub-Mark-64px.png" alt="GitHub"> </a>
+    <a id='profile-link' href="https://www.linkedin.com/in/joshholtkort/" target="_blank"><img src="static/LinkedIn-66px-R.png" alt="LinkedIn"> </a>
+    <a id='profile-link' href="https://www.freecodecamp.org/jholtkort" target="_blank"><img src="static/freeCodeCamp.jpg" alt="freeCodeCamp"> </a>
+  </div>
+</section>
 
 {% endblock %}
