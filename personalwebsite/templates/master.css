@@ -1,0 +1,123 @@
+body {
+  background-color: #000000;
+}
+
+#navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 7vh;
+  width: 100vw;
+  margin: auto;
+  border-bottom: solid;
+  display: flex;
+}
+
+#navbar a {
+  font-family: cursive;
+  font-size: 15px;
+  margin: 10px;
+}
+
+#navbar li {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#welcome-section {
+  width: 100vw;
+  height: 100vh;
+  background-color: green;
+  text-align: center;
+  padding-top: 35vh;
+  padding-bottom: 10vh;
+}
+
+#welcome-section h1, p {
+    font-family: monospace;
+}
+
+#welcome-section img {
+  height: 35vh;
+  width: auto;
+  border-radius: 50%
+}
+
+#about {
+  text-align: center;
+  background-color: lightblue;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+#projects {
+  width: 100vw;
+  background-color: lightgreen;
+  text-align: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+#projects h2 {
+  font-weight: normal;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-tile {
+  flex-direction: row;
+  height: 50vh;
+  width: 25vw;
+  margin: 50px;
+  text-align: center;
+  justify-content: center;
+  border: solid;
+}
+
+.project-tile h3 {
+  border-bottom: solid;
+}
+
+.project-tile img {
+  height: auto;
+  width: 20vw;
+}
+
+#contact {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  text-align: center;
+  justify-content: center;
+}
+
+#contact-container {
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact img {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+@media (max-width: 500px) {
+  #contact-container {
+    margin: 10px;
+  }
+
+  #contact img {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
